@@ -3,18 +3,18 @@ import type { AstroExpressiveCodeOptions } from 'astro-expressive-code'
 
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: 'SRLEOM',
+	author: 'Rohan Gope',
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-	title: 'astro-theme-resume',
+	title: 'Resume-Rohan Gope',
 	// Meta property used as the default description meta property
-	description: 'The official Astro Resume Theme',
+	description: 'Rohan Gope\'s resume. This is a personal project to showcase my resume in a more interactive way.',
 	// HTML lang property, found in src/layouts/Base.astro L:18
-	lang: 'en-GB',
+	lang: 'en-IN',
 	// Meta property, found in src/components/BaseHead.astro L:42
-	ogLocale: 'en_GB',
+	ogLocale: 'en_IN',
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
-		locale: 'en-GB',
+		locale: 'en-IN',
 		options: {
 			day: 'numeric',
 			month: 'short',
@@ -25,12 +25,8 @@ export const siteConfig: SiteConfig = {
 
 export const menuLinks: Array<{ title: string; path: string }> = [
 	{
-		title: 'Home',
+		title: 'Resume',
 		path: '/'
-	},
-	{
-		title: 'Blog',
-		path: '/blog/'
 	}
 ]
 
