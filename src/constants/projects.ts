@@ -36,7 +36,7 @@ export const myProjects = [
         demoLink: 'https://shark-tank-ca5bwet1b-darkrider0007.vercel.app/',
     },
     {
-        title: 'SharkTank - The Final Year College Project',
+        title: 'Blog Post',
         description: [
             "Implemented secure user authentication and account creation.",
             "Developed a user-friendly interface for articles with React and Tailwind CSS; used Appwrite for backend services."
