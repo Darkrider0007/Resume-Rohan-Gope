@@ -4,26 +4,29 @@ const backend = ['Express', 'Node', 'Django']
 const databases = ['MongoDB', 'Postgres', 'MySQL']
 const others = ['Git', 'Github', 'Vscode', 'Postman']
 
-
 export const mySkills = [
-    {
-        title: 'Languages',
-        skills: languages
-    },
-    {
-        title: 'Frontend',
-        skills: frontend
-    },
-    {
-        title: 'Backend',
-        skills: backend
-    },
-    {
-        title: 'Databases',
-        skills: databases
-    },
-    {
-        title: 'Others',
-        skills: others
-    }
+	{
+		title: 'Languages',
+		skills: languages
+	},
+	{
+		title: 'Frontend',
+		skills: frontend
+	},
+	{
+		title: 'Backend',
+		skills: backend
+	},
+	{
+		title: 'Databases',
+		skills: databases
+	},
+	{
+		title: 'Others',
+		skills: others
+	},
+	{
+		title: 'Android Development',
+		skills: ['React Native']
+	}
 ]
