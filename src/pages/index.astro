@@ -8,12 +8,11 @@ import SkillLayout from '../components/SkillLayout.astro'
 
 import { Image } from 'astro:assets'
 import myImage from '../assets/myImage.png'
-import {myExperiences} from "../constants/experiences"
-import {myEducation	} from "../constants/education"
+import { myExperiences } from '../constants/experiences'
+import { myEducation } from '../constants/education'
 import { myProjects } from '../constants/projects'
 import { myCertifications } from '../constants/certifications'
 import { mySkills } from '../constants/Skills'
-
 ---
 
 <PageLayout meta={{ title: 'Resume' }}>
@@ -27,9 +26,9 @@ import { mySkills } from '../constants/Skills'
 			/>
 
 			<div class='flex flex-col items-center gap-y-4'>
-				<h1 class='text-3xl font-bold'>Rohan Gope</h1>				
+				<h1 class='text-3xl font-bold'>Rohan Gope</h1>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='Celebel Technologies'>
+					<Label title='ASR Tech Solutions'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -86,10 +85,16 @@ import { mySkills } from '../constants/Skills'
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				I am Rohan Gope, a final-year Information Technology undergraduate at Jalpaiguri Government Engineering College (Autonomous) and an intern at Celebal Technologies. My passion lies in full-stack web development, where I am skilled in front-end technologies like ReactJS, and NextJS, as well as back-end technologies such as Node.js, Express.js, MongoDB, PostgreSQL, and MySQL. With a strong foundation in data structures and algorithms, I focus on crafting high-performing, user-centric web applications. As the Placement Coordinator at TnP cell JGEC, I am eager to contribute to innovative projects. Feel free to reach out to me at rg2512@it.jgec.ac.in for any inquiries or collaboration opportunities.
+				I am Rohan Gope, a final-year Information Technology undergraduate at Jalpaiguri Government
+				Engineering College (Autonomous) and an intern at Celebal Technologies. My passion lies in
+				full-stack web development, where I am skilled in front-end technologies like ReactJS, and
+				NextJS, as well as back-end technologies such as Node.js, Express.js, MongoDB, PostgreSQL,
+				and MySQL. With a strong foundation in data structures and algorithms, I focus on crafting
+				high-performing, user-centric web applications. As the Placement Coordinator at TnP cell
+				JGEC, I am eager to contribute to innovative projects. Feel free to reach out to me at
+				rg2512@it.jgec.ac.in for any inquiries or collaboration opportunities.
 			</p>
 		</Section>
-		
 
 		<Section title='Experience'>
 			{
@@ -102,16 +107,13 @@ import { mySkills } from '../constants/Skills'
 						imageClass='h-12 w-auto md:-left-16'
 					>
 						<ul class='ml-4 list-disc text-muted-foreground'>
-							{
-								experience.description.map((point) => (
-									<li>{point}</li>
-								))
-							}
+							{experience.description.map((point) => (
+								<li>{point}</li>
+							))}
 						</ul>
 					</Card>
 				))
 			}
-			
 		</Section>
 
 		<Section title='Education'>
@@ -123,11 +125,9 @@ import { mySkills } from '../constants/Skills'
 						date={education.date}
 						altText='Lorem, ipsum dolor sit'
 						imageClass='h-12 w-auto md:-left-16'
-					>					
-					</Card>
+					></Card>
 				))
 			}
-			
 		</Section>
 
 		<Section title='Projects'>
@@ -165,12 +165,7 @@ import { mySkills } from '../constants/Skills'
 		</Section> -->
 
 		<Section title='Skills'>
-			{
-				mySkills.map((skill) => (
-					<SkillLayout title={skill.title} skills={skill.skills} />
-				))
-			}			
+			{mySkills.map((skill) => <SkillLayout title={skill.title} skills={skill.skills} />)}
 		</Section>
 	</div>
-	
 </PageLayout>
